@@ -1,0 +1,38 @@
+{
+    "sourceFile": "contract/Variables.sol",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1696418125716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696418137949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,8 @@\n pragma solidity >= 0.8.18;\n+\n+\n+contract Varibles {\n+    constructor() {\n+        \n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696418150593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n pragma solidity >= 0.8.18;\n \n \n contract Varibles {\n-    constructor() {\n-        \n-    }\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696418238142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,17 @@\n pragma solidity >= 0.8.18;\n \n \n contract Varibles {\n-    \n+    constructor() {\n+        \n+    }\n+\n+    string public text = \"Hello world\";\n+\n+    uint public num = 123;\n+\n+    function  doSomething() public   {\n+        uint i = 456;\n+        uint timestamp = block.timestamp;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696418251986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,8 @@\n \n     function  doSomething() public   {\n         uint i = 456;\n         uint timestamp = block.timestamp;\n+\n+        address sender = msg.sender;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696418513082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+// SPDX-License-Identifier: MIT\n pragma solidity >= 0.8.18;\n \n \n contract Varibles {\n"
+                }
+            ],
+            "date": 1696418125716,
+            "name": "Commit-0",
+            "content": "pragma solidity >= 0.8.18;\n"
+        }
+    ]
+}
