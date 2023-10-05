@@ -15,6 +15,7 @@ contract Varibles {
         uint i = 456;
         uint timestamp = block.timestamp;
 
-        address sender = msg.sender;
+        address sender = msg.sender; 
     }
 }
+
