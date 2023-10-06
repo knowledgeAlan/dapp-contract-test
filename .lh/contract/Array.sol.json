@@ -1,0 +1,46 @@
+{
+    "sourceFile": "contract/Array.sol",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1696565249204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696565262957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n // SPDX-License-Identifier: MIT\n pragma solidity >= 0.8.18;\n \n \n+contract Array {\n+    constructor() {\n+        \n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566031951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,25 @@\n contract Array {\n     constructor() {\n         \n     }\n+\n+\n+    uint[] public arr;\n+    uint[] public arr2 = [1,2,3];\n+\n+    uint[10] public myFixedSizeArr;\n+\n+\n+    function get(uint i) public view returns (uint) {\n+        return arr[i];\n+    }\n+\n+    function getArr() public view returns (uint[] memory){\n+        return arr;\n+    }\n+\n+\n+    function push(uint i) public view {\n+        arr.push(i);\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566038910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n         return arr;\n     }\n \n \n-    function push(uint i) public view {\n+    function push(uint i) public {\n         arr.push(i);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566051526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,12 @@\n         return arr;\n     }\n \n \n-    function push(uint i) public {\n+    function push(uint i) public pure{\n         arr.push(i);\n     }\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566096120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,15 @@\n         return arr;\n     }\n \n \n-    function push(uint i) public pure{\n+    function push(uint i) public {\n         arr.push(i);\n     }\n \n \n \n+    function pop() public {\n \n+        arr.pop();\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566201168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,15 @@\n     function pop() public {\n \n         arr.pop();\n     }\n+\n+\n+    function getLength() public view returns (uint){\n+        return arr.length;\n+    }\n+\n+\n+    function remove(uint index) public   {\n+        delete arr[index];\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696566250077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,10 @@\n \n     function remove(uint index) public   {\n         delete arr[index];\n     }\n+\n+\n+    function examples() external {\n+        uint[] memory a = new uint[](6);\n+    }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1696565249204,
+            "name": "Commit-0",
+            "content": "// SPDX-License-Identifier: MIT\npragma solidity >= 0.8.18;\n\n\n"
+        }
+    ]
+}
